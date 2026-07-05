@@ -1,4 +1,4 @@
-# Patient Management System — Microservices Architecture
+# Patient Management System Microservices Architecture
 
 ## Overview
 
@@ -6,7 +6,7 @@ A production ready healthcare microservices application to implement and showcas
 
 ## What I Built
 
-Core CRUD API (Spring Boot) for patient records using PostgreSQL – Request validation using DTO, custom exception handling, and OpenAPI documentation.
+Core CRUD API (Spring Boot) for patient records using PostgreSQL Request validation using DTO, custom exception handling, and OpenAPI documentation.
 Billing Service: Synchronous calls to Patient Service using **gRPC** and Protocol Buffers for efficient and strongly typed calls.
 
 - **Apache Kafka**: Asynchronously consumes patient events, allowing patient events to be processed by the Analytics Service without being coupled to the core transaction flow.
@@ -18,7 +18,7 @@ Billing Service: Synchronous calls to Patient Service using **gRPC** and Protoco
 
 ## How I Did It
 
-I built the system service by service, adding one distributed pattern by one after a standalone Spring Boot API: synchronous gRPC calls for tightly coupled transactions, event-driven decoupling with Kafka and a common gateway layer for authentication, and routing. Early on, infrastructure was codified using CloudFormation, allowing the whole stack—the networking, databases, container orchestration, and load balancing—to be deployed repeatably and tested in a safe way in AWS LocalStack (before touching real AWS resources).
+I built the system service by service, adding one distributed pattern by one after a standalone Spring Boot API: synchronous gRPC calls for tightly coupled transactions, event-driven decoupling with Kafka and a common gateway layer for authentication, and routing. Early on, infrastructure was codified using CloudFormation, allowing the whole stack the networking, databases, container orchestration, and load balancing to be deployed repeatably and tested in a safe way in AWS LocalStack (before touching real AWS resources).
 
 ## Impact
 
