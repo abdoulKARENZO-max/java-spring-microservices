@@ -22,4 +22,4 @@ I built the system service by service, adding one distributed pattern by one aft
 
 ## Impact
 
-This turns out to be a fully functional, cloud-deployable microservices reference architecture that showcases the full suite of skills required for designing, communicating between services, securing services, testing services for observability, packaging services in containers, and automating infrastructure—skills that are applicable to enterprise-scale distributed systems.
+This turns out to be a fully functional, cloud-deployable microservices reference architecture that showcases the full suite of skills required for designing, communicating between services, securing services, testing services for observability, packaging services in containers, and automating infrastructure skills that are applicable to enterprise-scale distributed systems.
